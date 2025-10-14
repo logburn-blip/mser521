@@ -1,0 +1,55 @@
+
+/* Your code here */
+
+header {
+    background-color: paleturquoise;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    background-color: #EEE;
+    padding: 50px;
+}
+
+section {
+    background-color: white;
+    border: solid, 1px, #CCC
+}
+
+img {
+    width:100%;
+}
+
+section p {
+    text-align: center;
+    padding: 10px;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap);
+
+body {
+    font-family: "Inconsolata", monospace;
+}
+
+section:hover {
+    background-color: plum;
+    transform: rotate(5deg);
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: palevioletred
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        background-color: #EEE;
+        padding: 50px;
+    }
+}

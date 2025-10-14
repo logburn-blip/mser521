@@ -8,4 +8,11 @@ h2 {color:aqua}
 
 ol {color: aqua}
 
-img {width: 300px;}
+img {
+    width: 300px;
+}
+
+img:hover {
+    transform: rotate(200000000deg);
+    transition: all 10.0s
+}
