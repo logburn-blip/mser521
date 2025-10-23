@@ -12,3 +12,29 @@ body {
 }
 
 /* create additional rules below:  */
+
+section {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    background-color: rgb(241, 192, 241);
+}
+
+#bio {
+    background-color: rgb(194, 128, 194);
+}
+
+#portfolio {
+    background-color:rgb(153, 88, 153);
+    color: white;
+}
+
+#contact {
+    background-color:rgb(105, 52, 105);
+    color: white;
+} 

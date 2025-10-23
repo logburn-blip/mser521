@@ -1,29 +1,66 @@
 @import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap);
 
 body {
-    margin: 10;
     font-family: "Inconsolata", monospace;
     font-weight: 400;
     font-style: normal;
     line-height: 1.6rem;
-    background-color: #bbdff4;
+    background-color: #79b791;
 }
 
 h1{
     padding:25px;
-    font-family: "inconsolata", monospace;
+    font-family: "Tourney", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #AB2346;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+h2 {
+    font-family: "Tourney", sans-serif;
+    color:#AB2346
+}
+
+h3,p,li {
+    color: #054A29;
 }
 
 img {
     width: 100%;
+    border: 2px solid #E06C9F;
+}
+
+img:hover {
+    transform:scale(105%);
+    transition: all 1s;
+}
+
+li:hover{
+    color:#E06C9F;
 }
 
 .imagegallery {
-    background-color: bisque;
-    border: solid 1px blue;
+    background-color: #F7EBEC;
+    border: solid 2px #E06C9F;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -33,6 +70,12 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
 }
 
 /* .imagegallery {
