@@ -14,7 +14,7 @@ const options = {
     text: "Snow Days",
     },
   series: [{ name: 'Snow Days 2024', data: [4, 7, 3, 1] },
-          { name: 'Snow Days 2024', data: [10, 6, 4, 2] },
+          { name: 'Snow Days 2024', data: [9, 6, 1, 3] },
 ],
   xaxis: { categories: ['Jan', 'Feb', 'Mar', 'Apr'] },
 };
