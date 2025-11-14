@@ -16,8 +16,21 @@ const landmarks = [
     color: '#A23B72',
     icon: '🏰',
   },
-  { name: 'Asheville Art Museum', lat: 35.5946714, lng: -82.5538576, category: 'museum', color: '#F18F01', icon: '🎨' },
-  { name: 'Grove Park Inn', lat: 35.61848, lng: -82.5514, category: 'hotel', color: '#C73E1D', icon: '🏨' },
+  { name: 'Asheville Art Museum', 
+    lat: 35.5946714, lng: -82.5538576, 
+    category: 'museum', 
+    color: 
+    '#F18F01', 
+    icon: '🎨' 
+  },
+  { name: 'Grove Park Inn', 
+    lat: 35.61848, 
+    lng: -82.5514, 
+    category: 'hotel', 
+    color: 
+    '#C73E1D', 
+    icon: '🏨' 
+  },
   { name: 'Black Balsam Knob', lat: 35.3278781, lng: -82.9112063, category: 'nature', color: '#2D5016', icon: '🌲' },
   { name: 'River Arts District', lat: 35.5856312, lng: -82.5758296, category: 'arts', color: '#8B5A2B', icon: '🎭' },
   {

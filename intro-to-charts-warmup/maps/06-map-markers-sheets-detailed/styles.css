@@ -44,7 +44,15 @@ body {
     font-size: 100px !important;
 
 }
+
+#details img {
+    max-width: 100%;
+}
   
 .map-marker-popup {
     text-align: center;
+}
+
+.emoji {
+    font-size: 100px;
 }

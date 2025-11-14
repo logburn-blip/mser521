@@ -3,9 +3,9 @@
 const rhoadesRobinsonHall = [35.61572, -82.56562];
 
 const map = L.map('map');
-map.setView(rhoadesRobinsonHall, 18);
+map.setView(rhoadesRobinsonHall, 5);
 
-const currentTileLayer = L.tileLayer(toner, {
+const currentTileLayer = L.tileLayer(osmHumanitarian, {
   attribution: '&copy; Open Street Map contributors',
 }).addTo(map);
 

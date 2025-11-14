@@ -18,6 +18,8 @@ const options = {
 function getDetails(event, chartContext, config) {
   const dataIndex = config.dataPointIndex; // get the index of the clicked point
   console.log(dataIndex);
+  console.log(chartData[dataIndex]); 
+  console.log(categories[dataIndex]);
 
   const dataValue = chartData[dataIndex]; // get the value of the clicked point
   const category = categories[dataIndex]; // get the category of the clicked point
