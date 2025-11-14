@@ -1,0 +1,11 @@
+#section-4 {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+#section-4 .grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* TODO: Add responsive CSS here */

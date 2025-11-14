@@ -1,0 +1,58 @@
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 30px;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+/* ============================================
+   SECTION 1
+   ============================================*/
+
+/* Paste your styles for section 1 here from 03_video_intro/section1.css */
+
+/* ============================================
+   SECTION 2 - WHAT WE DO
+   ============================================ */
+
+/* Paste your styles for section 2 here from 04_what_we_do/section2.css */
+
+/* ============================================
+   SECTION 3
+   ============================================*/
+
+/* Paste your styles for section 3 here from 05_join_our_efforts/section3.css */
+
+/* ============================================
+   SECTION 4
+   ============================================*/
+
+/* Paste your styles for section 4 here from 06_data_visualizations/section4.css */
+
+/* ============================================
+   SECTION 5
+   ============================================*/
+
+/* Paste your styles for section 5 here from 07_forests_in_cities/section5.css */
+
+/* ============================================
+   SECTION 6
+   ============================================*/
+
+/* Paste your styles for section 6 here from 08_carousel/section6.css */
+
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
+
+/* Paste all media queries below the "regular" styles (ordering matters) */

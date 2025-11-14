@@ -1,0 +1,32 @@
+#section-5 {
+  background-image: url(../images/section-5-bkg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: 20vw;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.heading-1.mega {
+  color: white;
+  font-size: 4rem;
+}
+
+#section-5 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: flex-end;
+  border-bottom: 1px solid white;
+}
+
+.cards {
+  display: grid;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+/* TODO: Add responsive CSS here */
