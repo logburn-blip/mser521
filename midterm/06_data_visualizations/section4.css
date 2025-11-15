@@ -1,6 +1,7 @@
 #section-4 {
   max-width: 1150px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 #section-4 .grid {
@@ -9,3 +10,10 @@
 }
 
 /* TODO: Add responsive CSS here */
+ @media screen and (max-width: 1024px) {
+     /* TODO: Add the remaining responsive styles here */
+     #section-4 .grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+     }
+ }

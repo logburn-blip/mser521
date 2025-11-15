@@ -30,3 +30,60 @@
 }
 
 /* TODO: Add responsive CSS here */
+@media screen and (max-width: 1024px) {
+  
+  #section-5 {
+    background: none;
+    padding-top: 16vw;
+  }
+
+  .heading-1.mega {
+    color: var(--black);
+    font-size: 3rem;
+  }
+
+  #section-5 .container{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+
+  }
+
+  .cards {
+    gap: 20px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #section-5 {
+    background: none;
+    padding-top: 16vw;
+  }
+
+  .heading-1.mega {
+    color: var(--black);
+    font-size: 2rem;
+  }
+
+  #section-5 .container{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+
+  }
+
+  .cards {
+    gap: 20px;
+    padding-bottom: 20px;
+    font-size: 0.5rem;
+  }
+
+}
