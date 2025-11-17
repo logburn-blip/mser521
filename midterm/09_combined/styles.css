@@ -1,8 +1,9 @@
 /* ============================================
    NAVIGATION
    ============================================ */
+
 body {
-    background-color: var(--black);
+  background-color: var(--ivory);
 }
 
 header {
@@ -110,7 +111,8 @@ header {
 /* Paste your styles for section 3 here from 05_join_our_efforts/section3.css */
 #section-3 {
   background-image: url(../images/section-3-bkg.png);
-  background: no-repeat center top / 100% auto;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   padding: 120px 0;
 }
 
@@ -267,7 +269,7 @@ header {
     #section-3 {
       padding: 60px 0;
     }
-
+    /* TODO: Add the remaining responsive styles here */
     #section-3 .container {
       grid-template-columns: 1fr;
     }
@@ -275,9 +277,9 @@ header {
       grid-template-columns: 1fr;
       row-gap: 3rem;
     }
-    div.media {
+    /* div.media {
       height: 48px;
-    }
+    } */
 }
 
 /* THE NYC NATURE MAP */
@@ -291,10 +293,39 @@ header {
 
 /* FORESTS IN CITIES */
 
+@media screen and (max-width: 1024px) {
+  
+  #section-5 {
+    background: none;
+    background-color: var(--matcha-green);
+    padding-top: 16vw;
+  }
+
+  .heading-1.mega {
+    color: var(--black);
+    font-size: 3rem;
+  }
+
+  #section-5 .container{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+
+  }
+
+  .cards {
+    gap: 20px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
     #section-5 {
-    background: none;
     padding-top: 16vw;
   }
 
