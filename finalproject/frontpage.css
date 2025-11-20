@@ -67,3 +67,8 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
