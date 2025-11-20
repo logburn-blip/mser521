@@ -28,7 +28,7 @@ async function getSnowDays() {
   // Store the result in a variable called `formattedSnowDays` and print it to the console.
   console.log('4. Create formatted snow days strings:');
   // Your code here
-  const formattedSnowDays = snowDays.map(row => `${row["Month"]}: ${row["Snow Days 2023-2024"]}`);
+  const formattedSnowDays = snowDays.map(row => `${row["Month"]}: ${row["Snow Days 2023-2024"]} snow day(s) in 2023-2024`);
   console.log(formattedSnowDays);
 
   return snowDays;
