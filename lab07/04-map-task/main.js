@@ -3,7 +3,7 @@ const map = L.map('map');
 map.setView([35.5362825, -82.5654144], 10);
 
 // add the tile layer to the map:
-const currentTileLayer = L.tileLayer(toner, {
+const currentTileLayer = L.tileLayer(esriWorldStreetMap, {
   attribution: '&copy; Open Street Map contributors',
 }).addTo(map);
 
@@ -11,7 +11,7 @@ const currentTileLayer = L.tileLayer(toner, {
 const detailsElement = document.querySelector('#details');
 async function getChartData() {
   // TODO: change the sheet name to the name of your sheet
-  const sheetName = 'Landmarks';
+  const sheetName = 'willowLandmarks';
   const response = await fetch(
     `https://script.google.com/macros/s/AKfycbzcOnqzvg3ajtKVALrY_bvc5qo6bvYhwVYgPM7KNKU-3t2mG2YJRrFl4rwDmPxx0ZI78g/exec?sheet=${sheetName}`
   );
@@ -20,13 +20,30 @@ async function getChartData() {
   return landmarks;
 }
 
+function getIcon(color, icon) {
+    return L.divIcon({
+        html: `
+            <div style="background-color: ${color}" class="map-marker">
+                ${icon}
+            </div>
+        `,
+        iconSize: [50, 50],
+        iconAnchor: [25, 25],
+    });
+}
+
 async function generateMarkers() {
   const landmarks = await getChartData();
 
   // Add markers for each landmark
   for (const landmark of landmarks) {
     // Create marker:
-    const marker = L.marker([landmark.lat, landmark.lng]).addTo(map);
+    const marker = L.marker(
+      [landmark.lat, landmark.lng],
+      {
+      icon: getIcon(landmark.color, landmark.icon),  
+      }
+    ).addTo(map);
 
     marker.bindPopup(getPopupTemplate(landmark));
     marker.on('click', function (e) {
@@ -49,6 +66,7 @@ function getPanelTemplate(landmark) {
   return `
       <div>
           <div class="emoji">${landmark.icon}</div>
+          <img src="${landmark.online_image}">
           <h3>${landmark.name}</h3>
           <p class="tag">
             ${landmark.category.replace('_', ' ')}
