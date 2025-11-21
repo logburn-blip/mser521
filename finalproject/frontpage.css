@@ -1,74 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Jersey+10&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tiny5&display=swap');
 
-/* fonts */
-/* .tiny5-regular {
-  font-family: "Tiny5", sans-serif;
+html {
+  font-size: 16px;
+  font-family: "Quantico", sans-serif;
   font-weight: 400;
   font-style: normal;
-} */
+}
 
-/* .jersey-10-regular {
+/* heading CSS */
+
+h1 {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
-} */
-
-/* .quantico-regular {
-  font-family: "Quantico", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 4rem;
+  text-align: center;
+  padding: 10px;
 }
 
-.quantico-bold {
-  font-family: "Quantico", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.quantico-regular-italic {
-  font-family: "Quantico", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.quantico-bold-italic {
-  font-family: "Quantico", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
- */
-
-/* .electrolize-regular {
-  font-family: "Electrolize", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} */
-
+/* navigation bar CSS */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-ul li {
-  float: left;
+  display: flex;
+  justify-content: center;
 }
 
 ul li a {
   display: block;
   color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 2rem;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: grey;
 }
 
 ul li a:hover {
-  background-color: #111111;
+  color: blue;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/* section 1 CSS */
+
+#section-1 {
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
 }
+
+#section-1 h2 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+#section-1 p {
+  text-align: center;
+  display: block;
+  unicode-bidi: isolate;
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+
+/* section 2 */
+
+#section-2 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+#section-2 p {
+  text-align: left;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-2 .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+}
+
+#section-2 .grid {
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3px;
+}
+
+#section-2 .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#section-2 .container {
+  padding: 2px 16px;
+  width: 100%;
+}
+
+#section-2 .container p {
+  font-size: 1rem;
+  text-align: center;
+  padding-right: 50px;
+}
+
+#section-2 .container h3 {
+  color: red;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+
