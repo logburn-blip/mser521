@@ -5,6 +5,7 @@
         <title>Final Project</title>
         <link rel="stylesheet" href="frontpage.css" />
         <link rel="stylesheet" href="carousel.css" />
+        <script src="https://unpkg.com/rough-viz@2.0.5"></script>
         <script src="frontpage.js" defer></script>
 
     </head>
@@ -14,10 +15,10 @@
         <header>
             <h1 class="heading-1">what makes a "woke" game?</h1>
             <ul class="nav-bar">
-                <li><a href="section-1">Introduction</a></li>
-                <li><a href="news.asp">News</a></li>
-                <li><a href="contact.asp">Contact</a></li>
-                <li><a href="about.asp">About</a></li>
+                <li><a href="#section-1">Introduction</a></li>
+                <li><a href="#section-3">Categories</a></li>
+                <li><a href="#section-4">The Wokest Games</a></li>
+                <li><a href="#section-6">Conclusion</a></li>
             </ul>
         </header>
 
@@ -48,12 +49,61 @@
         </div>
     </section>
 
-    <img id="pagebreak" src="images/pixelassets/Sprite-0001.png">
-
     <!-- woke games demographics section -->
      <section id="section-3">
         <h2 id="heading-2">So...what makes a "woke" game?</h2>
-        <img src="images/cyberpunk2077.jpg" alt="Woke games graph 1">
+
+        <div id="barchartgrid">
+        
+        <div id="barChartContainer" style="width: 500px; height: 500px;">
+            <script>
+                new roughViz.Bar({
+                element: '#barChartContainer', // Select the container by its ID
+                data: {
+                    labels: ['LGBT+', 'Pro-DEI', 'Pro-Climate', 'Pro-Immigration', 'Anti-Western Society','Anti-Patriarchy', 'Anti-Capitalist','Anti-Human', 'Anti-Republican'],
+                    values: [83, 26, 2.4, 1.5, 1.7, 1.2, 2.8, 1.1, 1.8],
+                },
+                yAxisMaxValue: 100,
+                title: "Reasons for Rating: Woke Games (%)",
+                roughness: 0, // Controls the sketchiness
+                color: ['#FFAFCC'],
+                stroke: '#034429',
+                labelFontSize: '0.5rem',
+                strokeWidth: 1,
+                highlight: '#CDB4DB',
+                margin: {top: 100, right: 50, bottom: 100, left: 50},
+                titleFontSize: '1.5rem',
+                fillStyle: 'cross-hatch', // Options: hachure, solid, cross-hatch, dots, etc.
+                fillWeight: 2.5
+                });
+            </script>
+        </div>
+        
+            <div id="barChartContainer2" style="width: 500px; height: 500px;">
+            <script>
+                new roughViz.Bar({
+                element: '#barChartContainer2', // Select the container by its ID
+                data: {
+                    labels: ['LGBT+', 'Pro-DEI', 'Pro-Climate', 'Pro-Immigration', 'Anti-Western Society','Anti-Patriarchy', 'Anti-Capitalist','Anti-Human', 'Anti-Republican'],
+                    values: [79,17,4.2,0,0.3,0.6,1.2,3.3,0.9],
+                },
+                title: "Reasons for Rating: Slightly Woke Games (%)",
+                roughness: 0, // Controls the sketchiness
+                color: ['#b3f83f'],
+                stroke: '#034429',
+                labelFontSize: '0.5rem',
+                strokeWidth: 1,
+                highlight: '#CDB4DB',
+                titleFontSize: '1.5rem',
+                margin: {top: 100, right: 50, bottom: 100, left: 50},
+                fillStyle: 'cross-hatch', // Options: hachure, solid, cross-hatch, dots, etc.
+                fillWeight: 2.5
+                });
+            </script>
+        </div>
+
+        </div>
+
         <h3>83% of woke games and 79% of informational games were flagged for pro-LGBTQIA+ content.</h3>
         <h4>From here on, I'll be referring to "informational" games as "slightly woke"; it feels less confusing to me.</h4>
         <p>Queer content was the overwhelming reason for the “woke” rating. Many role-playing games (RPGs), like Elden Ring, were flagged for using body type A/B rather than explicitly male or female.</p>
@@ -79,8 +129,6 @@
 
         <br></br>
 
-        <img id="pagebreak" src="images/pixelassets/Sprite-0001.png">
-
         <div class="grid">
         
             <div class="card">
@@ -91,13 +139,11 @@
                 </div>
             </div>
 
-            <p>The next highest reason was pro-DEI content, which was present in 26% of woke games and 17% of slightly woke games. Dave the Diver, an indie RPG about gathering ingredients for a sushi restaurant, was criticized for its “improbably diverse cast.”</p>
+            <p id="gridp">The next highest reason was pro-DEI content, which was present in 26% of woke games and 17% of slightly woke games. Dave the Diver, an indie RPG about gathering ingredients for a sushi restaurant, was criticized for its “improbably diverse cast.”</p>
         
         </div>
 
         <br></br>
-
-        <img id="pagebreak" src="images/pixelassets/Sprite-0001.png">
 
         <p>The rest of the categories were much less prevalent, with each representing less than 5% of titles. Anti-capitalist sentiment was the third highest category for woke games (2.8%), while pro-climate action was the third highest for slightly woke games (4.2%).</p>
 
@@ -122,34 +168,184 @@
 
         <br></br>
 
-        <img id="pagebreak" src="images/pixelassets/Sprite-0001.png">
-
         <p>Woke games were also more likely to be made by independent ("indie") studios than the non-woke category.</p>
-        <img src="images/portal2.jpg" alt="Indie Studio Graph">
+        
+        <div id="piechartgrid">
+
+        <div id="pieChartContainer" style="width: 500px; height: 500px;">
+            <script>
+                new roughViz.Pie({
+                element: '#pieChartContainer', // Select the container by its ID
+                data: {
+                    labels: ['Indie Games', 'AAA Games'],
+                    values: [563,318],
+                },
+                yAxisMaxValue: 100,
+                title: "Woke Games",
+                roughness: 0, // Controls the sketchiness
+                colors: ['#0fd4a7','#f091f5'],
+                stroke: '#034429',
+                labelFontSize: '0.5rem',
+                strokeWidth: 1,
+                highlight: '#b3f83f',
+                margin: {top: 100, right: 50, bottom: 100, left: 50},
+                titleFontSize: '1.5rem',
+                fillStyle: 'cross-hatch', // Options: hachure, solid, cross-hatch, dots, etc.
+                fillWeight: 2.5
+                });
+            </script>
+        </div>
+
+        <div id="pieChartContainer2" style="width: 500px; height: 500px;">
+            <script>
+                new roughViz.Pie({
+                element: '#pieChartContainer2', // Select the container by its ID
+                data: {
+                    labels: ['Indie Games', 'AAA Games'],
+                    values: [172,157,]
+                },
+                yAxisMaxValue: 100,
+                title: "Slightly Woke Games",
+                roughness: 0, // Controls the sketchiness
+                colors: ['#0fd4a7','#f091f5'],
+                stroke: '#034429',
+                labelFontSize: '0.5rem',
+                strokeWidth: 1,
+                highlight: '#b3f83f',
+                margin: {top: 100, right: 50, bottom: 100, left: 50},
+                titleFontSize: '1.5rem',
+                fillStyle: 'cross-hatch', // Options: hachure, solid, cross-hatch, dots, etc.
+                fillWeight: 2.5
+                });
+            </script>
+        </div>
+
+        <div id="pieChartContainer3" style="width: 500px; height: 500px;">
+            <script>
+                new roughViz.Pie({
+                element: '#pieChartContainer3', // Select the container by its ID
+                data: {
+                    labels: ['Indie Games', 'AAA Games'],
+                    values: [163,225],
+                },
+                yAxisMaxValue: 100,
+                title: "Non-Woke Games",
+                roughness: 0, // Controls the sketchiness
+                colors: ['#0fd4a7','#f091f5'],
+                stroke: '#034429',
+                labelFontSize: '0.5rem',
+                strokeWidth: 1,
+                highlight: '#b3f83f',
+                margin: {top: 100, right: 50, bottom: 100, left: 50},
+                titleFontSize: '1.5rem',
+                fillStyle: 'cross-hatch', // Options: hachure, solid, cross-hatch, dots, etc.
+                fillWeight: 2.5
+                });
+            </script>
+        </div>
+
+        </div>
 
     </section>
-
-    <img id="pagebreak" src="images/pixelassets/Sprite-0001.png">
 
     <!-- most woke games section -->
     <section id="section-4">
         <h2>The Most Woke Games</h2>
-        <h4>Each game was given a score from 0-9, based on how many categories their rating mentioned. The top 5 games all received a score of 4 or above, with the #1 game–Armored Core 6–receiving a score of 7.</h4>
+        <h4>Each game was given a score from 0-9, based on how many categories their rating mentioned. The top 5 games all received a score of 4 or above, with #1, Armored Core 6, receiving a score of 7.</h4>
         
-        <div class="imgcontainer">
-            <img src="images/CelJaded.com-Armored-Core-VI-Fires-of-Rubicon-1.jpg" alt="Armored Core 6" class="image">
-            <div class="overlay">
-                <div class="imgtext">
-                <h2>Score: 7/9</h2>
-                <p class="section4p">
-                Contains multiple forms of Woke messaging, some overt and some more subtle. 
-                See the <a href="https://steamcommunity.com/groups/Woke_Content_Detector/discussions/1/4763207947399645621">full review for details.</a>
-                </p>
-                </div>
-            </div>
+        <div class="ac6review">
+
+        <div class="ac6reviewgrid">
+        <div>
+        <h4>Armored Core 6: Fires of Rubicon</h4>
+        <h4>Score: 7/9</h4>
+        <p>Review from the Woke Content Detector discussion page.</p>
+        <p>
+        The game should obviously be labeled as "not recommended". Other gamers should not be getting tricked in to buying this DEI infested garbage like me.
+        <p>
         </div>
 
+        <img src="images/armoredcore6.jpg">
+
+        </div>
+
+        <P>It blatantly pushes:</P>
+
+        <ul>
+            <li>
+            pro-LGBTQ+ messaging:
+            *The games refuses to refer to the protagonist as "he", instead the marketing prominently
+            refers to the protagonist with pronouns calling him "they".
+            *The game only has one confirmed relationship and of course these groomers had to
+            make it ♥♥♥♥.
+            </li>
+            <li>
+            pro-climate action messaging:
+            *The game smears corporations extracting recourses from other planets as bad and
+            harmful.
+            </li>
+            <li>
+            pro-communism/socialism messaging:
+            *One of the factions in game constantly refer to each other as "comrades". Apparently
+            they were even blatantly called communist while the game was in development. And if
+            the player sides with the communists, then the game starts referring to the player as a
+            "hero" and "liberator".
+            </li>
+            <li>
+            pro-immigration messaging:
+            *The game is less overt about this one. But it pushes multipole times that illegal
+            immigrants are accepted as a part of the culture they seek to invade.  
+            </li>
+            <li>
+            pro-transhumanism messaging:
+            *one of the endings the player forces transhumanism on humanity. After which the game
+            starts playing a soundtrack called "stargazer", implying that the player forcing
+            transhumanism on humanity is something good.  
+            </li>
+            <li>
+            anti-western society messaging:
+            again the game smears the western corporations as bad, while the "good" communist
+            faction blatantly uses Armenian(Muslim) names.
+            </li>
+            <li>
+            -anti-human messaging
+            *When the player decides to pick the ending, where he protects Humanity, by eradicating the alien space herpes. Then the games narrator calls the protagonist a "monster".
+            </li>
+            <li>
+            anti-colonialism messaging:
+            *The game smears corporations colonizing a planet as bad.
+            *The game features a colony ship (obviously made to colonize). The ending where the
+            player decides to protect the colony ship is the one where he is smeared as a "monster".
+            In the other two endings, the player decides to stop the colony ship from completing it´s
+            mission. This includes the ending where the player is referred to as a "Hero" and
+            "Liberator".    
+            </li>
+            <li>
+            anti-capitalism messaging:
+            *smears corporations as one dimensional evil.
+            </li>
+            <li>
+            anti-heterosexual messaging
+            *Again no heterosexual relationships. Only ♥♥♥♥´s.
+            </li>
+            <li>
+            anti-patriarchy messaging
+            *the game features multipole characters that are in patriarchal or fatherly like positions of
+            power. The game displays the player and other characters rejecting their "father´s"
+            wisdom and leadership as something good.
+
+            </li>
+        </ul>
+
+        </div>
+
+        </section>
+
+        <section id="section-4a">
+
         <br></br>
+
+        <h4>The remaining games in the top 5 all received a score of 4/9.</h4>
 
         <div class="grid">
 
@@ -197,8 +393,6 @@
 
     </section>
 
-    <img id="pagebreak" src="images/pixelassets/Sprite-0001.png">
-
     <!-- what games are approved? -->
     <section id="section-5">
         <h2>What games are approved?</h2>
@@ -218,8 +412,6 @@
 
     </section>
 
-    <img id="pagebreak" src="images/pixelassets/Sprite-0001.png">
-
     <!-- why does this matter? -->
 
     <section id="section-6">
@@ -228,14 +420,12 @@
         <h3>Diversity is important–in video games, in media, and in real life.</h3>
     </section>
 
-    <img id="pagebreak" src="images/pixelassets/Sprite-0001.png">
-
     <!-- footer -->
-
-    <section class="footer">
-        <p><b>Data source:</b> Though the original Google sheet is protected, a different independent project, <a href="https://wokedetector.cirnoslab.me/full-list">the Woke Detector website</a>, compiled a shareable .csv from the original list.</p>
-    </section>
     
     </main>
+
+    <section class="footer">
+    <p><b>Data source:</b> Though the original Google sheet is protected, a different independent project, <a href="https://wokedetector.cirnoslab.me/full-list">the Woke Detector website</a>, compiled a shareable .csv from the original list.</p>
+    </section>
 
 </html>
