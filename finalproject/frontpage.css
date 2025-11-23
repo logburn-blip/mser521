@@ -11,6 +11,7 @@ html {
 body {
   margin-left: 200px;
   margin-right: 200px;
+  cursor: url(images/pixelassets/cursor.png), auto;
 }
 
 h2 {
@@ -40,7 +41,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 6rem;
-  text-align: left;
+  text-align: center;
   color: #394d83;
 }
 
