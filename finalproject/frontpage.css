@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  margin-left: 200px;
-  margin-right: 200px;
-  cursor: url(images/pixelassets/cursor.png), auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* cursor: url(images/pixelassets/cursor.png), auto; */
 }
 
 h2 {
@@ -24,14 +24,6 @@ h2 {
 
 img {
   border-radius: 10px;
-}
-
-/* pixel assets */
-
-#pagebreak {
-  display: block;
-  margin: auto;
-  padding: 50px;
 }
 
 /* heading CSS */
@@ -49,6 +41,13 @@ h1 {
 header ul {
   list-style-type: none;
   margin: 0;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: lightblue;
+  box-shadow: 0 4px 8px 0 #394d83;
+  transition: 0.3s;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -323,21 +322,9 @@ header ul li a:hover {
   opacity: 0.9;
 }
 
-.imgtext {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -355,7 +342,7 @@ header ul li a:hover {
 }
 
 #section-4a h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -402,6 +389,13 @@ header ul li a:hover {
   font-style: italic;
 }
 
+#section-5 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 #section-5 h4 {
   text-align: center;
   font-size: 1.25rem;
@@ -420,7 +414,7 @@ header ul li a:hover {
 }
 
 #section-6 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   color: #394d83;
   background-color: lightblue;
@@ -437,4 +431,15 @@ header ul li a:hover {
   color: #394d83;
   font-size: 0.9rem;
   width: 100%;
+}
+
+/* tablet optimization */
+
+@media screen and (max-width: 1024px) {
+  /* section 1 */
+
+}
+
+@media screen and (max-width: 768px) {
+  /* section 1 */
 }
