@@ -66,7 +66,7 @@ function getPanelTemplate(landmark) {
   return `
       <div>
           <div class="emoji">${landmark.icon}</div>
-          <img src="${landmark.online_image}">
+          <img src="${landmark.online_image}" width=50%>
           <h3>${landmark.name}</h3>
           <p class="tag">
             ${landmark.category.replace('_', ' ')}
