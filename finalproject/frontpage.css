@@ -6,24 +6,30 @@ html {
   font-weight: 400;
   font-style: normal;
   background-image: url(images/backgroundpattern.png);
+  cursor: url(images/pixelassets/cursor.png), auto;
 }
 
 body {
   margin-left: 50px;
   margin-right: 50px;
-  /* cursor: url(images/pixelassets/cursor.png), auto; */
 }
 
 h2 {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3.5rem;
-  text-align: left;
+  font-size: 4rem;
+  text-align: center;
 }
 
 img {
   border-radius: 10px;
+}
+
+#pagebreak {
+  display: block;
+  margin: auto;
+  padding-top: 50px;
 }
 
 /* heading CSS */
@@ -41,8 +47,8 @@ h1 {
 header ul {
   list-style-type: none;
   margin: 0;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 400px;
+  margin-right: 400px;
   border: solid 1px black;
   border-radius: 10px;
   background-color: lightblue;
@@ -58,14 +64,16 @@ header ul li a {
   color: #394d83;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 header ul li a:hover {
-  color: #FFC8DD;
+  color: #f52974;
+  cursor: url(images/pixelassets/cursor.png), auto;
+
 }
 
 /* section 1 CSS */
@@ -78,7 +86,7 @@ header ul li a:hover {
 }
 
 #section-1 p {
-  text-align: left;
+  text-align: center;
   display: block;
   unicode-bidi: isolate;
   font-size: 1.75rem;
@@ -89,7 +97,7 @@ header ul li a:hover {
 
 #section-2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 50px;
@@ -97,7 +105,7 @@ header ul li a:hover {
 }
 
 #section-2 p {
-  text-align: left;
+  text-align: center;
   padding-right: 30px;
   padding-left: 30px;
   display: flex;
@@ -111,12 +119,13 @@ header ul li a:hover {
   border-radius: 5px;
   background-color: lightblue;
   color: #394d83; 
+  width: 700px;
 }
 
 #section-2 .grid {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 3px;
+  grid-gap: 100px;
 }
 
 #section-2 .card:hover {
@@ -138,10 +147,6 @@ header ul li a:hover {
   font-family: "Quantico", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.card img {
-  border-radius: 5px 5px 0 0;
 }
 
 /* section 3 */
@@ -174,6 +179,11 @@ header ul li a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
+  background-color: lightblue;
+  box-shadow: 0 4px 8px 0 #394d83;
+  transition: 0.3s;
+  border-radius: 5px;
+  color: #394d83;
 }
 
 #section-3 h3 {
@@ -209,7 +219,7 @@ header ul li a:hover {
 
 #section-3 .grid {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
 
@@ -239,16 +249,18 @@ header ul li a:hover {
 #section-4 {
   color: #394d83;
   background-size: 200%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #section-4 h4 {
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
   color:#394d83;
 }
 
 #section-4a h4 {
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
   color:#394d83;
 }
@@ -360,10 +372,12 @@ header ul li a:hover {
 
 #section-5 {
   color: #394d83;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 #section-5 p {
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
 }
 
@@ -405,11 +419,13 @@ header ul li a:hover {
 
 #section-6 {
   color: #394d83;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 #section-6 p {
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
   color: #394d83;
 }
 
@@ -417,6 +433,8 @@ header ul li a:hover {
   font-size: 2rem;
   text-align: center;
   color: #394d83;
+  margin-left: 250px;
+  margin-right: 250px;
   background-color: lightblue;
   box-shadow: 0 4px 8px 0 #394d83;
   transition: 0.3s;
