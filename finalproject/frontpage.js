@@ -1,19 +1,19 @@
-<script src="https://unpkg.com/rough-viz@2.0.5"></script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
 
-new roughViz.Donut(
-  {
-    element: '#viz1',
-    data: {
-      labels: ['North', 'South', 'East', 'West'],
-      values: [10, 5, 8, 3]
-    },
-    title: "Regions",
-    width: window.innerWidth / 4,
-    roughness: 8,
-    colors: ['red', 'orange', 'blue', 'skyblue'],
-    stroke: 'black',
-    strokeWidth: 3,
-    fillStyle: 'cross-hatch',
-    fillWeight: 3.5,
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
   }
-);
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
